@@ -3,6 +3,9 @@ import CustomButton from "./components/customBtn";
 import UserAvatar from "./components/userAvatar";
 import CardContainer from "./components/cardContainer";
 import ClockTimer from "./components/ClockTimer";
+import DifferentRender from "./components/differentRender";
+
+
 import { useEffect, useState } from "react";
 function App() {
 
@@ -74,7 +77,17 @@ function App() {
     </div>
 
       </div>
+
+      <div>
+        <DifferentRender 
+        isLoggedIn={true}
+        username="Tarun"
+        unreadMessagesCount={1}
+        isAvailable={true}
+        isAdmin={true}/>
       </div>
+      </div>
+
 
     </>
   );
