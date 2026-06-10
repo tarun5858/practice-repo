@@ -4,6 +4,8 @@ import UserAvatar from "./components/userAvatar";
 import CardContainer from "./components/cardContainer";
 import ClockTimer from "./components/ClockTimer";
 import DifferentRender from "./components/differentRender";
+import TechStackList from "./components/techList";
+import ProductList from "./components/productsList";
 
 
 import { useEffect, useState } from "react";
@@ -85,6 +87,16 @@ function App() {
         unreadMessagesCount={1}
         isAvailable={true}
         isAdmin={true}/>
+      </div>
+
+
+      <div>
+        <TechStackList/>
+      </div>
+
+
+      <div>
+        <ProductList/>
       </div>
       </div>
 

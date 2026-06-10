@@ -1,11 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import 'dotenv/config'  // Loads .env variables 
-
+import productRoutes from './routes/productRoutes.js'
 
 // 1. Initializing the Express application
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 // 2. Built-in middleware to parse incoming JSON requests
 app.use(express.json());
@@ -26,6 +26,9 @@ app.post('/api/users',(req,res) => {
 
     })
 })
+
+
+app.use('/api', productRoutes);
 
 
 // connect to MongoDB
