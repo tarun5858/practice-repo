@@ -6,7 +6,7 @@ import ClockTimer from "./components/ClockTimer";
 import DifferentRender from "./components/differentRender";
 import TechStackList from "./components/techList";
 import ProductList from "./components/productsList";
-
+import UserForm from "./components/UserForm";
 
 import { useEffect, useState } from "react";
 function App() {
@@ -98,6 +98,15 @@ function App() {
       <div>
         <ProductList/>
       </div>
+<br/>
+<div>
+  <UserForm />
+</div>
+
+
+
+
+
       </div>
 
 
