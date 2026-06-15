@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import 'dotenv/config'  // Loads .env variables 
 import productRoutes from './routes/productRoutes.js'
+import Todo from './models/todo.js';
+
 
 // 1. Initializing the Express application
 const app = express();
