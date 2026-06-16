@@ -7,7 +7,7 @@ import Todo from './models/todo.js';
 
 // 1. Initializing the Express application
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 // 2. Built-in middleware to parse incoming JSON requests
 app.use(express.json());
