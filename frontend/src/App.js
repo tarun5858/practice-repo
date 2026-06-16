@@ -4,9 +4,11 @@ import UserAvatar from "./components/userAvatar";
 import CardContainer from "./components/cardContainer";
 import ClockTimer from "./components/ClockTimer";
 import DifferentRender from "./components/differentRender";
-import TechStackList from "./components/techList";
+// import TechStackList from "./components/techList";
 import ProductList from "./components/productsList";
 import UserForm from "./components/UserForm";
+import ContextApp from "./components/useContext/dashboard";
+
 
 import { useEffect, useState } from "react";
 function App() {
@@ -90,9 +92,9 @@ function App() {
       </div>
 
 
-      <div>
+      {/* <div>
         <TechStackList/>
-      </div>
+      </div> */}
 
 
       <div>
@@ -103,6 +105,11 @@ function App() {
   <UserForm />
 </div>
 
+
+<br/><br/>
+<div>
+  <ContextApp />
+</div>
 
 
 
