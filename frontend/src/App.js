@@ -8,9 +8,9 @@ import DifferentRender from "./components/differentRender";
 import ProductList from "./components/productsList";
 import UserForm from "./components/UserForm";
 import ContextApp from "./components/useContext/dashboard";
-
-
+import CryptoTracker from "./components/useEffect/CryptoTracker";
 import { useEffect, useState } from "react";
+import ProductApp from "./components/routing/ProductApp";
 function App() {
 
   const [selectedColor, setSelectedColor] = useState("black");
@@ -22,7 +22,7 @@ function App() {
     },1000);
 
     return () => clearInterval(timerId);
-  })
+  },[])
 
   return (
     <>
@@ -111,7 +111,16 @@ function App() {
   <ContextApp />
 </div>
 
+<div>
+  <CryptoTracker/>
+</div>
 
+
+
+<br/>
+<div>
+  <ProductApp/>
+</div>
 
 
       </div>
